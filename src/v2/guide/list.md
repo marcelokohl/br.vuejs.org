@@ -337,7 +337,7 @@ new Vue({
 
 ### `v-for` with `v-if`
 
-When they exist on the same node, `v-for` has a higher priority than `v-if`. That means the `v-if` will be run on each iteration of the loop separately. This is very useful when you want to render nodes for only _some_ items, like below:
+Quando eles existem no mesmo elemento, o v-for tem uma prioridade maior do que v-if. Isso significa que o v-if será executado separadamente em cada iteração do loop. Isso é muito útil quando você deseja renderizar nós de apenas alguns itens, como abaixo:
 
 ``` html
 <li v-for="todo in todos" v-if="!todo.isComplete">
@@ -345,9 +345,9 @@ When they exist on the same node, `v-for` has a higher priority than `v-if`. Tha
 </li>
 ```
 
-The above only renders the todos that are not complete.
+O exemplo acima renderiza apenas os itens que não estão completos.
 
-If instead, your intent is to conditionally skip execution of the loop, you can place the `v-if` on a wrapper element (or [`<template>`](conditional.html#Conditional-Groups-with-v-if-on-lt-template-gt)). For example:
+Mas se a sua intenção é ignorar condicionalmente toda a execução do loop, você pode colocar o `v-if` em um elemento wrapper (ou [`<template>`](conditional.html#Conditional-Groups-with-v-if-on-lt-template-gt)). Por exemplo:
 
 ``` html
 <ul v-if="shouldRenderTodos">
