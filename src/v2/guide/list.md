@@ -55,7 +55,7 @@ var example1 = new Vue({
 </script>
 {% endraw %}
 
-Dentro de blocos `v-for`, temos acesso completo a propriedades do escopo pai. A diretiva também suporte um segundo argumento opcional para o índice do item corrente.
+Dentro de blocos `v-for`, temos acesso completo a propriedades do escopo pai. A diretiva também suporta um segundo argumento opcional para o índice do item corrente.
 
 ``` html
 <ul id="example-2">
